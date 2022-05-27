@@ -1,4 +1,4 @@
-FROM amazonlinux:latest
+FROM amazonlinux
 RUN yum install -y httpd \
   zip \
  unzip 
