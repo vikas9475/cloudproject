@@ -2,10 +2,10 @@ FROM centos:latest
 RUN yum install -y httpd \
   zip \
  unzip 
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page247/kindle.zip /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page275/hook.zip /var/www/html/
 WORKDIR /var/www/html
-RUN unzip kindle.zip
-RUN cp -rvf markup-kindle/* .
-RUN rm -rf __MACOSX markups-kindle kindle.zip
+RUN unzip hook.zip
+RUN cp -rvf hook-theme-master/* .
+RUN rm -rf hook-theme-maste hook.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
